@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZubberCoffee — кофейня в центре города</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header id="site-header">
+    <div class="container header-row">
+      <a href="./index.html" class="logo">Zubber<span>Coffee</span></a>
+
+      <nav class="main-nav">
+        <a href="./about.html" class="link">О нас</a>
+        <a href="#menu" class="link">Меню</a>
+        <a href="./contacts.html" class="link">Контакты</a>
+        <a href="./optional.html" class="link">Доставка</a>
+      </nav>
+
+      <div class="hours-pill">
+        <span class="dot" aria-hidden="true"></span>
+        08:00 — 00:00
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Кофе для тех, кто&nbsp;торопится жить медленно</h1>
+          <p class="hero-lead">
+            Обжариваем сами, варим на глаз годами проверенных пропорций
+            и держим зал открытым с раннего утра до полуночи —
+            заходите работать, встречаться или просто выдохнуть.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn-primary">Смотреть меню</a>
+            <a href="./contacts.html" class="btn-ghost">Как нас найти</a>
+          </div>
+        </div>
+
+        <div class="hero-frame">
+          <img src="./img/caffe-1.jpg" alt="Зал ZubberCoffee" class="hero-img hero-img--main">
+          <img src="./img/caffe-2.jpg" alt="Бариста за работой" class="hero-img hero-img--small">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="quick-nav">
+          <button class="quick-nav__item" data-jump="coffee">Кофе</button>
+          <button class="quick-nav__item" data-jump="drink">Напитки</button>
+          <button class="quick-nav__item" data-jump="dessert">Десерты</button>
+          <button class="quick-nav__item" data-jump="eat">Еда</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement">
+      <div class="container statement-grid">
+        <div class="statement-media">
+          <img src="./img/caffe-3.jpg" alt="Столик у окна">
+        </div>
+        <div class="statement-text">
+          <h2>Место, где кофе — повод, а не цель</h2>
+          <p>
+            Мы спроектировали Zubber так, чтобы в нём не нужно было
+            выбирать между тишиной для работы и компанией для разговора.
+            Розетки у каждого стола, дневной свет до самого вечера
+            и бариста, который помнит ваш обычный заказ.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="atmosphere">
+      <div class="container atmosphere-head">
+        <h2>Атмосфера дня</h2>
+      </div>
+      <div class="atmosphere-track">
+        <figure class="atmosphere-item">
+          <img src="./img/caffe-5.jpg" alt="Утро в зале">
+          <figcaption>Утренний ритуал</figcaption>
+        </figure>
+        <figure class="atmosphere-item">
+          <img src="./img/caffe-6.jpg" alt="Тихий угол зала">
+          <figcaption>Тихий угол</figcaption>
+        </figure>
+        <figure class="atmosphere-item">
+          <img src="./img/caffe-7.jpg" alt="Работа за ноутбуком">
+          <figcaption>Рабочий стол</figcaption>
+        </figure>
+        <figure class="atmosphere-item">
+          <img src="./img/caffe-8.jpg" alt="Встреча за кофе">
+          <figcaption>Встречи без спешки</figcaption>
+        </figure>
+        <figure class="atmosphere-item">
+          <img src="./img/caffe-9.jpg" alt="Свет в обеденное время">
+          <figcaption>Свет в обед</figcaption>
+        </figure>
+        <figure class="atmosphere-item">
+          <img src="./img/caffe-10.jpg" alt="Разговор за чашкой">
+          <figcaption>Разговор за чашкой</figcaption>
+        </figure>
+        <figure class="atmosphere-item">
+          <img src="./img/caffe-4.jpg" alt="Вечерний зал">
+          <figcaption>Вечерний свет</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="menu-head">
+          <h2>Меню</h2>
+          <p>Собирали вместе с гостями — если чего-то не хватает, скажите бариста.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Категории меню">
+          <button class="menu-tab is-active" data-tab="coffee" role="tab" aria-selected="true">Кофе</button>
+          <button class="menu-tab" data-tab="eat" role="tab" aria-selected="false">Еда</button>
+          <button class="menu-tab" data-tab="drink" role="tab" aria-selected="false">Напитки</button>
+          <button class="menu-tab" data-tab="dessert" role="tab" aria-selected="false">Десерты</button>
+          <button class="menu-tab" data-tab="breakfast" role="tab" aria-selected="false">Завтраки</button>
+          <button class="menu-tab" data-tab="tea" role="tab" aria-selected="false">Чай</button>
+        </div>
+
+        <ul class="menu-list is-active" data-panel="coffee">
+          <li><span class="menu-list__name">Эспрессо</span><span class="menu-list__price">100&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Американо</span><span class="menu-list__price">120&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Капучино</span><span class="menu-list__price">160&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Латте</span><span class="menu-list__price">170&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Раф ванильный</span><span class="menu-list__price">210&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Фраппе</span><span class="menu-list__price">220&nbsp;₽</span></li>
+        </ul>
+
+        <ul class="menu-list" data-panel="eat">
+          <li><span class="menu-list__name">Пицца Маргарита</span><span class="menu-list__price">420&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Пицца Пепперони</span><span class="menu-list__price">480&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Пицца Четыре сыра</span><span class="menu-list__price">520&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Брускетта с томатами</span><span class="menu-list__price">320&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Сэндвич с курицей</span><span class="menu-list__price">290&nbsp;₽</span></li>
+        </ul>
+
+        <ul class="menu-list" data-panel="drink">
+          <li><span class="menu-list__name">Мохито</span><span class="menu-list__price">600&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Лимонад</span><span class="menu-list__price">350&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Айс-ти персик</span><span class="menu-list__price">250&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Смузи ягодный</span><span class="menu-list__price">380&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Горячий шоколад</span><span class="menu-list__price">260&nbsp;₽</span></li>
+        </ul>
+
+        <ul class="menu-list" data-panel="dessert">
+          <li><span class="menu-list__name">Чизкейк Нью-Йорк</span><span class="menu-list__price">350&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Тирамису</span><span class="menu-list__price">400&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Медовик</span><span class="menu-list__price">300&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Макарон</span><span class="menu-list__price">150&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Панна-котта</span><span class="menu-list__price">280&nbsp;₽</span></li>
+        </ul>
+
+        <ul class="menu-list" data-panel="breakfast">
+          <li><span class="menu-list__name">Сырники со сметаной</span><span class="menu-list__price">240&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Омлет с сыром</span><span class="menu-list__price">280&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Овсяная каша с ягодами</span><span class="menu-list__price">220&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Гранола с йогуртом</span><span class="menu-list__price">260&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Блины с творогом</span><span class="menu-list__price">250&nbsp;₽</span></li>
+        </ul>
+
+        <ul class="menu-list" data-panel="tea">
+          <li><span class="menu-list__name">Чёрный чай</span><span class="menu-list__price">150&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Зелёный чай</span><span class="menu-list__price">160&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Матча латте</span><span class="menu-list__price">290&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Травяной чай</span><span class="menu-list__price">180&nbsp;₽</span></li>
+          <li><span class="menu-list__name">Имбирный чай</span><span class="menu-list__price">200&nbsp;₽</span></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="logo">Zubber<span>Coffee</span></span>
+        <p>У нас всё начинается с обжарки — маленькими партиями, раз в неделю.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Навигация</h3>
+        <a href="./about.html">О нас</a>
+        <a href="#menu">Меню</a>
+        <a href="./contacts.html">Контакты</a>
+        <a href="./optional.html">Доставка</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Часы работы</h3>
+        <p>Ежедневно<br>08:00 — 00:00</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Контакты</h3>
+        <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+        <a href="mailto:hello@zubbercoffee.ru">hello@zubbercoffee.ru</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 ZubberCoffee</span>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
